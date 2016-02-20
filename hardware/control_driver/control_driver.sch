@@ -824,8 +824,140 @@ DIN A3, landscape with extra doc field</description>
 <instance part="HG1" gate="G$1" x="251.46" y="139.7"/>
 </instances>
 <busses>
+<bus name="DATA0,DATA1,DATA2,DATA3,DATA4,DATA5,DATA6,DATA7,E,RS,RW,UART_TX,UART_RX,SWDIO,SWDCLK,LED1,LED2,LED3,PWM1,PWM2,VCC_3.3V,VCC_5V,GND">
+<segment>
+<wire x1="223.52" y1="121.92" x2="223.52" y2="233.68" width="0.762" layer="92"/>
+<wire x1="223.52" y1="233.68" x2="86.36" y2="233.68" width="0.762" layer="92"/>
+</segment>
+</bus>
 </busses>
 <nets>
+<net name="DATA0" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA0-WKUP"/>
+<wire x1="223.52" y1="127" x2="208.28" y2="127" width="0.1524" layer="91"/>
+<label x="217.17" y="127.508" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="DATA1" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA1"/>
+<wire x1="223.52" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
+<label x="217.17" y="130.048" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="DATA2" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA2"/>
+<wire x1="223.52" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
+<label x="217.17" y="132.588" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="DATA3" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA3"/>
+<wire x1="223.52" y1="134.62" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
+<label x="217.17" y="135.128" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="DATA4" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA4"/>
+<wire x1="223.52" y1="137.16" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
+<label x="217.17" y="137.668" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="DATA5" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA5"/>
+<wire x1="223.52" y1="139.7" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
+<label x="217.17" y="140.208" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="DATA6" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA6"/>
+<wire x1="223.52" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
+<label x="217.17" y="142.748" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="DATA7" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA7"/>
+<wire x1="223.52" y1="144.78" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
+<label x="217.17" y="145.288" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="E" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA8"/>
+<wire x1="223.52" y1="147.32" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
+<label x="220.98" y="147.828" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="RS" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA11"/>
+<wire x1="223.52" y1="154.94" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
+<label x="220.472" y="155.448" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="RW" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA12"/>
+<wire x1="223.52" y1="157.48" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
+<label x="220.472" y="157.988" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="UART_TX" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA9"/>
+<wire x1="223.52" y1="149.86" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
+<label x="214.884" y="150.368" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="UART_RX" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA10"/>
+<wire x1="223.52" y1="152.4" x2="208.28" y2="152.4" width="0.1524" layer="91"/>
+<label x="214.884" y="152.908" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="HG1" gate="G$1" pin="K"/>
+<wire x1="241.3" y1="121.92" x2="223.52" y2="121.92" width="0.1524" layer="91"/>
+<label x="224.536" y="122.428" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="SWDIO" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA13"/>
+<wire x1="223.52" y1="160.02" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
+<label x="217.424" y="160.528" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="SWDCLK" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PA14"/>
+<wire x1="223.52" y1="162.56" x2="208.28" y2="162.56" width="0.1524" layer="91"/>
+<label x="215.9" y="163.068" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="PWM1" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PB1"/>
+<wire x1="223.52" y1="172.72" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
+<label x="218.44" y="173.228" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="PWM2" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="PB0"/>
+<wire x1="223.52" y1="170.18" x2="208.28" y2="170.18" width="0.1524" layer="91"/>
+<label x="218.44" y="170.688" size="1.27" layer="95" font="vector"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
